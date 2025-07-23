@@ -1,32 +1,52 @@
 html {
+    margin: 10px;
 }
-body{
-    background:  #FFF8F0;
-    font-family: "Inter" , sans-serif;
+
+body {
+    background: #FFF8F0;
+    font-family: "Inter", sans-serif;
     font-size: 16px;
     font-weight: 400px;
     line-height: 24px;
     color: #55206d;
 }
+
 h1 {
-    font-family: "League+Spartan" , sans-serif;
-    font-size: 3rem;
+    font-family: "League+Spartan", sans-serif;
+    font-size: 2rem;
     font-weight: 700;
     line-height: 2.7rem;
     text-align: left;
     color: #190D37;
 }
+
 h2 {
-    font-family: "League+Spartan" , sans-serif;
-    font-size: 36px;
+    font-family: "League+Spartan", sans-serif;
+    font-size: 28px;
     font-weight: 700;
     line-height: 40px;
     color: #000000;
 }
+
 .bigtext {
     color: #331E6A;
     font-family: Poppins;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 400;
     line-height: 32px;
+}
+
+#heroSection {
+    display: flex;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+#HeroText {
+    width: 50%;
+}
+
+#HeroImg {
+    width: 50%;
+    height: 360px;
 }
