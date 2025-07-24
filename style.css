@@ -27,6 +27,7 @@ h2 {
     line-height: 40px;
     color: #000000;
 }
+
 .small-text {
     font-family: "Inter";
     font-size: 12px;
@@ -34,7 +35,14 @@ h2 {
     line-height: 14px;
     letter-spacing: 0em;
     text-align: left;
+    padding: 10px;
+    margin-top: 20px;
 }
+
+#hi {
+    margin-top: 8px;
+}
+
 .bigtext {
     color: #331E6A;
     font-family: Poppins;
@@ -45,7 +53,7 @@ h2 {
 
 #heroSection {
     display: flex;
-    max-width: 1440px;
+    max-width: 1060px;
     margin: 0 auto 48px auto;
 }
 
@@ -54,16 +62,21 @@ h2 {
     padding: 32px 0px 32px 0px;
 
 }
-#Herotext  {
-    width: 50%;
+
+#Herotext {
+    width: 60%;
 }
 
 #hero-image-width {
-    width: 50%;
+    width: 40%;
 }
+
 #hero-image {
     width: 100%;
+    border-bottom-left-radius: 200px;
+    border-bottom-right-radius: 200px;
 }
+
 #Contact-button {
     height: 44px;
     width: 138px;
@@ -75,12 +88,15 @@ h2 {
     line-height: 19px;
     color: #ffffff;
     margin-top: 20px;
+    cursor: pointer;
 }
+
 #pricing-section {
     max-width: 1060px;
     margin: 0 auto;
     margin: 48px auto;
 }
+
 .overtitle {
     font-family: Poppins;
     font-size: 12px;
@@ -91,24 +107,29 @@ h2 {
     text-align: center;
     margin-bottom: 8px;
 }
+
 .section-heading {
     text-align: center;
     max-width: 700px;
     margin: 0 auto;
 }
+
 .section-subtitle {
     text-align: center;
     margin: 8px auto 48px auto;
     max-width: 700px;
 }
+
 #pricing-boxes {
     display: flex;
 
 }
+
 .pricing-boxes {
     width: 33.3%;
-    
+
 }
+
 .pricing-card {
     background: #ffffff;
     margin: 0 10px;
@@ -116,6 +137,7 @@ h2 {
     box-shadow: 6px 2px 25px -9px #0000001A;
     padding: 20px;
 }
+
 .service {
     font-family: Poppins;
     font-size: 14px;
@@ -124,6 +146,7 @@ h2 {
     text-transform: uppercase;
     color: #2858ff;
 }
+
 .price {
     font-family: Poppins;
     font-size: 36px;
@@ -132,6 +155,7 @@ h2 {
     color: #000000;
     margin-top: 8px;
 }
+
 .price-per {
     font-family: Poppins;
     font-size: 14px;
@@ -139,6 +163,7 @@ h2 {
     line-height: 21px;
     color: #8A8A8A;
 }
+
 .service-description {
     font-family: Poppins;
     font-size: 14px;
@@ -147,10 +172,12 @@ h2 {
     color: #8B8B8B;
     margin-top: 8px;
 }
+
 .service-benifits {
     padding-left: 0;
     list-style-type: none;
 }
+
 .service-benifits {
     margin-bottom: 8px;
     font-family: Poppins;
@@ -159,6 +186,7 @@ h2 {
     line-height: 24x;
     color: #666666;
 }
+
 .service-c-button {
     width: 100%;
     padding: 12px;
@@ -172,8 +200,48 @@ h2 {
     font-weight: 500;
     line-height: 19px;
 }
+
 .service-c-button:hover {
     background: #2f2f2f;
     color: #ffffff;
     cursor: pointer;
+}
+
+.card-2 {
+    background: #ffd748;
+}
+
+.card-2 .service {
+    color: #000000;
+}
+
+.card-2 li {
+    color: #00000f;
+}
+
+.card-2 .service-description {
+    color: #00000080;
+}
+
+.card-2 .price-per {
+    color: #00000080;
+}
+
+.card-2 .service-c-button {
+    background: #2f2f2f;
+    color: #ffffff;
+}
+
+.card-2 .service-c-button:hover {
+    background: #ffffff;
+    color: #2f2f2f;
+}
+
+#footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background: #000000;
+    color: #ffffff;
+    margin-top: 48px;
 }
