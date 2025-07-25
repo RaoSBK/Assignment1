@@ -28,6 +28,7 @@ h2 {
     color: #000000;
     text-align: center;
 }
+
 h3 {
     text-align: center;
     margin: 8px auto 48px auto;
@@ -104,36 +105,43 @@ h3 {
 /* #sectionn {
     display: flex;
 } */
- #sectionn {
+#sectionn {
     max-width: 1060px;
     margin: 0 auto 0 auto;
- }
+}
+
 #ssection {
     display: flex;
     text-align: center;
     font-weight: 700;
     margin-top: 0px;
 }
+
 .work-description {
     margin-top: 8px;
     color: #000000;
 }
+
 .section {
     background: #ffffff;
     margin: 0 10px;
     border-radius: 10px;
     box-shadow: 6px 2px 25px -9px #0000001A;
     padding: 20px;
+    margin-bottom: 48px;
 }
+
 .card-1 {
     background: #ffd748;
 }
+
 .service .work-description {
     color: #000000;
     font-size: 36px;
     font-weight: 700;
     margin-top: 8px;
 }
+
 #pricing-section {
     max-width: 1060px;
     margin: 0 auto;
@@ -163,6 +171,49 @@ h3 {
     max-width: 700px;
 }
 
+#Project {
+    max-width: 1060px;
+    margin: 0 auto;
+    margin: 48px auto;
+}
+.project-table {
+    padding: 10px;
+}
+.project-name {
+    display: flex;
+}
+
+#PN {
+    text-align: center;
+    font-size: 48px;
+    line-height: 67px;
+}
+
+.PN {
+    background: #ffffff;
+    margin: 0px 10px;
+    border-radius: 10px;
+    box-shadow: 6px 2px 25px -9px #0000001A;
+    padding: 20px;
+}
+.card-1 {
+    background: #ffd748;
+    color: #854836;
+}
+.card-3 {
+    background: #854836;
+    color: #ffd748;
+}
+.project-discription {
+    background: #ffffff;
+    margin: 0 10px;
+    border-radius: 10px;
+    box-shadow: 6px 2px 25px -9px #0000001A;
+    padding: 20px;
+}
+/* .project-n {
+    color: #2858FF;
+} */
 #pricing-boxes {
     display: flex;
 
