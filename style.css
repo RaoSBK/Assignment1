@@ -2,11 +2,11 @@ body {
     background: #FFF8F0;
     font-family: "Inter", sans-serif;
     font-size: 16px;
-    font-weight: 400px;
+    font-weight: 400;
     line-height: 24px;
     color: #55206d;
     margin: 0;
-    padding: 0;
+    padding: 0 16px 16px;
 }
 
 h1 {
@@ -14,7 +14,7 @@ h1 {
     font-size: 3rem;
     font-weight: 700;
     line-height: 2.7rem;
-    text-align: left;
+    text-align: center;
     color: #190D37;
     margin-top: 10px;
     margin-bottom: 39px;
@@ -44,7 +44,7 @@ h3 {
     font-weight: 400;
     line-height: 14px;
     letter-spacing: 0em;
-    text-align: left;
+    text-align: center;
     padding: 10px;
     margin-top: 20px;
 }
@@ -67,12 +67,19 @@ h3 {
     margin: 0 auto 48px auto;
 }
 
+#Hero-Text {
+    width: 100%;
+    padding: 32px 0px 0px 0px;
+
+}
+#Hero-text {
+    width: 60%;
+}
 #HeroText {
     width: 100%;
     padding: 32px 0px 32px 0px;
 
 }
-
 #Herotext {
     width: 60%;
 }
@@ -98,13 +105,11 @@ h3 {
     line-height: 19px;
     color: #ffffff;
     margin-top: 20px;
+    margin-bottom: 8px;
     cursor: pointer;
 }
 
 
-/* #sectionn {
-    display: flex;
-} */
 #sectionn {
     max-width: 1060px;
     margin: 0 auto 0 auto;
@@ -131,9 +136,7 @@ h3 {
     margin-bottom: 48px;
 }
 
-.card-1 {
-    background: #ffd748;
-}
+
 
 .service .work-description {
     color: #000000;
@@ -185,7 +188,7 @@ h3 {
 
 #PN {
     text-align: center;
-    font-size: 48px;
+    font-size: 32px;
     line-height: 67px;
 }
 
@@ -197,12 +200,15 @@ h3 {
     padding: 20px;
 }
 .card-1 {
-    background: #ffd748;
+    background: #DBE4C9;
     color: #854836;
 }
 .card-3 {
-    background: #854836;
-    color: #ffd748;
+    background: #F0E4D3;
+    color: #854836;
+}
+#card-4{
+    background-color: #F2EAD3;
 }
 .project-discription {
     background: #ffffff;
@@ -235,7 +241,7 @@ h3 {
 .service {
     font-family: Poppins;
     font-size: 14px;
-    font-weight: 21px;
+    font-weight: 21;
     line-height: 21px;
     text-transform: uppercase;
     color: #2858ff;
@@ -257,7 +263,10 @@ h3 {
     line-height: 21px;
     color: #8A8A8A;
 }
-
+.service{
+        color: #000000;
+        font-weight: 700;
+    }
 .service-description {
     font-family: Poppins;
     font-size: 14px;
@@ -277,7 +286,7 @@ h3 {
     font-family: Poppins;
     font-size: 16px;
     font-weight: 400;
-    line-height: 24x;
+    line-height: 24px;
     color: #666666;
 }
 
@@ -345,4 +354,127 @@ h3 {
     background: #000000;
     color: #ffffff;
     margin-top: 48px;
+}
+
+
+    /* this is for tablet */
+@media (max-width: 768px) {
+    #heroSection{
+        flex-direction: column;
+        align-items: center;
+        margin-left: auto;
+    }
+    #Herotext, #hero-image-width {
+        width: 100%;
+    }
+
+    #pricing-boxex {
+        flex-direction: column;
+    }
+    .pricing-boxes{
+        width: 100px;
+        margin-bottom: 20px;
+    }
+}
+    /* this is for mobile */
+@media (max-width: 600px) {
+    h1{
+        font-size: 2rem;
+        line-height: 2.2rem;
+        text-align: center;
+    }
+    h2{
+        font-size: 24px;
+        line-height: 32px;
+    }
+    h3{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .section, .project-discription, .pricing-card{
+        margin: 16px auto;
+        padding: 12px;
+    }
+    #hi{
+        text-align: center;
+        margin-top: 8px;
+    }
+    .sm{
+        margin-top: 8px;
+    }
+    .bigtext{
+        margin-top: 8px;
+    }
+    #Hero-Text {
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+    }
+
+    #Hero-text {
+        width: 60%;
+    }
+    #HeroText {
+        width: 100%;
+        padding: 0px 0px 0px 0px;
+        text-align: center;
+
+    }
+    #Herotext {
+        width: 60%;
+    }
+    #Contact-button {
+        height: 55px;
+        width: 180px;
+        border-top-left-radius:32px;
+        border-top-right-radius: 32px;
+        background: #C9B59C;
+        font-family: Inter;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 19px;
+        color: #000000;
+        display: block;
+        margin: 20px auto;
+        cursor: pointer;
+        text-align: center;
+        border: #ffffff;
+    }
+    #ssection{
+        flex-direction: column;
+    }
+    .service{
+        color: #000000;
+        font-weight: 700;
+    }
+    .service .work-description {
+        color: #000000;
+        font-size: 36px;
+        font-weight: 300;
+        margin-top: 8px;
+    }
+    .project-name{
+        flex-direction: column;
+    }
+    .card-1 {
+    background: #DBE4C9;
+    color: #854836;
+    }
+    .card-3 {
+        background: #F0E4D3;
+        color: #854836;
+    }
+    #card-4{
+        background-color: #F2EAD3;
+    }
+    .PN{
+        border-top-left-radius: 48px;
+        border-top-right-radius: 48px;
+    }
+    #pricing-boxes{
+        flex-direction: column;
+    }
+    .pricing-boxes {
+    width: 100%;
+    }
+
 }
