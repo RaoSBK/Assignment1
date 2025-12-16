@@ -302,6 +302,8 @@ h3 {
     font-size: 16px;
     font-weight: 500;
     line-height: 19px;
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
 }
 
 .service-c-button:hover {
@@ -317,7 +319,17 @@ h3 {
 .card-2 .service {
     color: #000000;
 }
-
+.card-1 {
+    background: #DBE4C9;
+    color: #854836;
+}
+.card-3 {
+    background: #F0E4D3;
+    color: #854836;
+}
+#card-4{
+    background-color: #F2EAD3;
+}
 .card-2 li {
     color: #00000f;
 }
@@ -351,8 +363,8 @@ h3 {
     width: 100%;
     text-align: center;
     padding: 20px;
-    background: #000000;
-    color: #ffffff;
+    background: #C9B59C;
+    color: #000000;
     margin-top: 48px;
 }
 
@@ -475,6 +487,21 @@ h3 {
     }
     .pricing-boxes {
     width: 100%;
+    }
+    .service-c-button {
+        width: 100%;
+        padding: 12px;
+        height: 44px;
+        border-radius: 4px;
+        border-width: 0;
+        background: #ffffff;
+        color: #2f2f2f;
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19px;
+        border-top-left-radius: 32px;
+        border-top-right-radius: 32px;
     }
 
 }
