@@ -175,7 +175,7 @@ h3 {
 
 .overtitle {
     font-family: Poppins;
-    font-size: 12px;
+    font-size: 24px;
     font-weight: 600;
     line-height: 18px;
     text-transform: uppercase;
@@ -384,6 +384,28 @@ h3 {
 #link {
     color: #854836;
 }
+.btn{
+    text-decoration: none;
+}
+#contactts {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+.contacts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin: 12px 0;
+}
+.colink {
+    text-decoration: none;
+    color: #55206d;
+    font-weight: 500;
+    margin-top: 12px;
+}
+
 #footer {
     width: 100%;
     text-align: center;
@@ -394,7 +416,7 @@ h3 {
 }
 
 
-    /* this is for tablet */
+/* this is for tablet */
 @media (max-width: 768px) {
     #heroSection{
         flex-direction: column;
@@ -418,6 +440,11 @@ h3 {
 
 
 
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
 @media (max-width: 600px) {
     *,
     *::before,
@@ -622,5 +649,4 @@ h3 {
         padding: 20px;
         margin-bottom: 48px;
     }
-
 }
