@@ -245,14 +245,13 @@ h3 {
 /* .project-n {
     color: #2858FF;
 } */
+
+
 #pricing-boxes {
-    display: flex;
-
-}
-
-.pricing-boxes {
-    width: 33.3%;
-
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* EXACT 3 columns */
+    column-gap: 20px;
+    row-gap: 50px;
 }
 
 .pricing-card {
@@ -264,6 +263,13 @@ h3 {
     text-align: center;
 }
 
+.pricing-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
 .service {
     font-family: Poppins;
     font-size: 20px;
@@ -273,6 +279,12 @@ h3 {
     color: #2858ff;
 }
 
+.service-button {
+    margin-top: auto;
+}
+.service-description {
+    min-height: 100px;
+}
 .price {
     font-family: Poppins;
     font-size: 16px;
