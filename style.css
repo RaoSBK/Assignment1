@@ -608,8 +608,19 @@ h3 {
         border-top-left-radius: 48px;
         border-top-right-radius: 48px;
     }
-    #pricing-boxes{
-        flex-direction: column;
+    
+    #pricing-boxes {
+        display: grid;
+        grid-template-columns: 1fr;   /* 🔥 ONE card per row */
+        gap: 20px;
+    }
+
+    .pricing-boxes {
+        width: 100%;   /* 🔥 full width */
+    }
+
+    .pricing-card {
+        width: 100%;
     }
     .pricing-boxes {
     width: 100%;
