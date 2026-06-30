@@ -1,286 +1,1020 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>Suraj Bhan</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suraj Bhan</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Portfolio of Suraj Bhan Kumar - AI Engineer specializing in Python, Machine Learning, Automation, and Full Stack Web Development. B.Tech AI & ML Student (9.38 CGPA) and Hackathon Builder.">
+  <meta name="keywords" content="Suraj Bhan Kumar, Suraj Bhan, AI Engineer, Python Developer, Full Stack Developer, AI Automation, Machine Learning, portfolio, developer portfolio, hackathon winner, B.Tech AI ML">
+  <meta name="author" content="Suraj Bhan Kumar">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://surajbhan.netlify.app/">
+  <meta property="og:title" content="Suraj Bhan Kumar | AI Engineer & Full Stack Developer">
+  <meta property="og:description" content="Building AI Products that solve Real World Problems. Explore projects, hackathons, and certifications.">
+  <meta property="og:image" content="img.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://surajbhan.netlify.app/">
+  <meta property="twitter:title" content="Suraj Bhan Kumar | AI Engineer & Full Stack Developer">
+  <meta property="twitter:description" content="Building AI Products that solve Real World Problems. Explore projects, hackathons, and certifications.">
+  <meta property="twitter:image" content="img.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="img.jpg">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- CDNs: Lucide Icons, GSAP & ScrollTrigger -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- JSON-LD Structured Data Schema for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Suraj Bhan Kumar",
+    "jobTitle": "AI Engineer & Full Stack Developer",
+    "url": "https://surajbhan.netlify.app",
+    "email": "surajbhan20005@gmail.com",
+    "telephone": "+91-7970667756",
+    "image": "https://surajbhan.netlify.app/img.jpg",
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Chaitanya (Deemed to be University)"
+    },
+    "sameAs": [
+      "https://github.com/RaoSBK",
+      "https://www.linkedin.com/in/surajbhankumar/"
+    ],
+    "description": "B.Tech Computer Science student specializing in AI & ML with a strong academic background, active hackathon participation, and experience developing real-world software solutions."
+  }
+  </script>
 </head>
 
-
 <body>
-    <!--Hero section-->
-    <div id="heroSection">
-        <!--Hero text parts-->
-        <div>
-            <!--email and phone-->
-            <div class="small-text contact-bar">
-                <div class="contact-item">
-                    <img src="phone.jpg" alt="Imag" width="16" height="16" style="margin-bottom: -4px;">
-                    <span>(+91) 797 066 7756</span>
-                </div>
+  <!-- Aesthetic Overlays -->
+  <div class="noise-overlay" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="gradient-blobs" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
 
-                <div class="contact-item">
-                    <img src="email.jpg" alt="Imag" width="16" height="16" style="margin-bottom: -4px;">
-                    <span>surajbhan20005@gmail.com</span>
-                </div>
-            </div>
+  <!-- Custom Cursor -->
+  <div id="custom-cursor-dot" aria-hidden="true"></div>
+  <div id="custom-cursor-ring" aria-hidden="true"></div>
 
+  <!-- Reading Progress Bar -->
+  <div class="scroll-progress-container" aria-hidden="true">
+    <div class="scroll-progress-bar" id="scroll-progress"></div>
+  </div>
 
+  <!-- Header Navigation -->
+  <header>
+    <div class="nav-container">
+      <a href="#hero" class="logo" aria-label="Suraj Bhan Logo">
+        <span>Suraj</span> Bhan
+      </a>
 
-            <!--name-->
-            <div id="hi">
-                Hello, I'm Suraj Bhan
-            </div>
-            <!--Title-->
-            <h1 class="sm" id="Hero-Text">Computer Science Student | Front-End & AI/ML Learner</h1>
-            <!--subtitle-->
-            <div class="bigtext" id="HeroText">
-                Computer Science student specializing in Artificial Intelligence and Machine Learning, currently building a strong foundation in machine learning principles, data understanding 
-                , and front-end development. Interested in applying theoretical knowledge through practical projects and continuous learning.
-            </div>
-            <!--Button-->
+      <!-- Navigation links -->
+      <nav id="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="#hero" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#tech" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
 
-            <a href="mailto:surajbhan20005@gmail.com" id="Contact-button">Contact Me</a>
+      <div class="nav-actions">
+        <!-- Light / Dark toggle -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Switch to light mode">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide moon-icon"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide sun-icon"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="M4.93 4.93l1.41 1.41"/><path d="M17.66 17.66l1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="M6.34 17.66l-1.41 1.41"/><path d="M19.07 4.93l-1.41 1.41"/></svg>
+        </button>
 
-        </div>
-        <div id="hero-image-wrapper">
-            <!--Hero Image-->
-            <img id="hero-image" src="img.jpg">
-        </div>
+        <!-- Resume CTA -->
+        <a href="resume.pdf" download="Suraj_Bhan_Kumar_Resume.pdf" class="btn btn-secondary btn-sm resume-download-btn" aria-label="Download Resume PDF">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-download"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg> Resume
+        </a>
+
+        <!-- Mobile Hamburguer Menu -->
+        <button id="mobile-menu-toggle" class="hamburger" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="nav-menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+        </button>
+      </div>
     </div>
+  </header>
 
-    <!-- what i  do  -->
-    <div id="sectionn">
-        <div class="overtitle">
-            what i do
-        </div>
-        <h2>Areas I Am Currently Learning and Working On</h2>
-        <h3>I focus on hands-on learning, structured practice, and building a strong problem-solving mindset through consistent coding and experimentation.
-        </h3>
-        <div id="ssection">
-            <div class="section card-1">
-                <div class="service">Front-End Development</div>
-                <div class="work-description">I am learning front-end development with a focus on building responsive and userfriendly web interfaces.
-                    I work with core web technologies and continuously practice creating clean layouts, improving design structurem and enhancing usability
-                    through real projects and experimentation.
-                </div>
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-contact-bar">
+            <div class="hero-contact-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>(+91) 797 066 7756</span>
             </div>
-            <div class="section" id="card-4">
-                <div class="service">AI & MACHINE LEARNING</div>
-                <div class="work-description">I am building a foundation in Artificial Intelligence and Machine Learning by learning core concepts such as 
-                    data understanding, baisc algorithms, and model behaviour. My foucs is on applying theoretical knowledge through academic exercises, small 
-                    practice projects, and continuous experimentationto strengthen my understanding of  AI/ML systems.
-                </div>
+            <div class="hero-contact-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <span>surajbhan20005@gmail.com</span>
             </div>
-            <div class="section card-1">
-                <div class="service">Full-Stack Development</div>
-                <div class="work-description">I am exploring Full-Stack development concepts by understanding how font-end interfaces connect
-                    with back-end logic. My focus is on learning the overall structure of web applications and how different technologies work 
-                    together as a complete system.
-                </div>
-            </div>
-        </div>
-    </div>
+          </div>
+          
+          <h1 class="hero-hi">Hello, I'm Suraj Bhan</h1>
+          <h2 class="hero-title">Computer Science Student | Front-End & AI/ML Learner</h2>
 
+          <p class="hero-description">
+            Computer Science student specializing in Artificial Intelligence and Machine Learning, currently building a strong foundation in machine learning principles, data understanding , and front-end development. Interested in applying theoretical knowledge through practical projects and continuous learning.
+          </p>
 
-    <!-- projects-->
-    <div id="Project">
-        <div class="overtitle">projects</div>
-        <h2>A selection of My Academic and Practice Projects</h2>
-        <h3>These  projects reflect my learning journey through academic coursework and self practice. Each project helped me strengthen my
-            understanding of programming fundamentals, problem-solving and practical implementation across different technologies.
-        </h3>
-        <div class="project-table">
-            <div class="project-name ">
-                <div id="PN" class="PN card-3">Smart Learning Coach</div>
-                <div class="project-discription card-3">
-                    <div class="project-n">Tech-Stack:- Python & stemlit</div>
-                    <div>A Python-based project focused on creating a simple learning assistance system. This project helped me practice logical
-                        thingking, structured programming, and applying problem-solving techniques to simulate a guided learning experiience.
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="project-table">
-            <div class="project-name">
-                <div id="PN" class="PN card-1">Password Manager</div>
-                <div class="project-discription card-1">
-                    <div class="project-n">Tech-Stack:- C lang</div>
-                    <div >A console-based password management system developed as a minor academic project in C. The project focuses on 
-                        fundamental conocepts such as file handling, data storage, and secure access logic, strengthening my understanding
-                        of low-level programming.
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="project-table">
-            <div class="project-name">
-                <div id="PN" class="PN card-3">Scientific Calculator</div>
-                <div class="project-discription card-3">
-                    <div class="project-n">Tech-Stack:- HTML, CSS, Java Script</div>
-                    <div>A web-based clone of scientific calculator designed to practice front-end fundamentals. This project helped me understanding
-                        UI structure, input handling, and basic logical operations using core web technologies like java script
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+          <div class="hero-typing" aria-live="polite" style="margin-bottom: 24px;">
+            <span>I build solutions that&nbsp;</span><span class="typed-text" style="font-weight: 700;"></span><span class="cursor"></span>
+          </div>
 
-    <!--pricing section-->
+          <div class="hero-ctas">
+            <a href="#contact" class="btn btn-primary" id="Contact-button">Contact Me</a>
+            <a href="resume.pdf" download="Suraj_Bhan_Kumar_Resume.pdf" class="btn btn-secondary resume-download-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-download"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg> Download Resume
+            </a>
+            <a href="#projects" class="btn btn-secondary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-folder-git-2"><path d="M9 20H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H20a2 2 0 0 1 2 2v2"/><circle cx="16" cy="18" r="2"/><path d="M16 16v-2"/><path d="M14 16h-4"/></svg> View Projects
+            </a>
+          </div>
 
-    <div id="pricing-section">
-        <div class="overtitle">ACHIEVEMENTS</div>
-        <h2 class="section-heading">Academic Achievements & Certificaitons</h2>
-        <div class="bigtext section-subtitle">
-            This section highlights my participation in academic events, hackathons and learniing platforms that have contributed to my
-            growth in Artificial Intelligence, Machine Learning, and programming fundamentals.
+          <div class="hero-socials">
+            <a href="https://github.com/RaoSBK" target="_blank" rel="noopener" class="hero-social-btn" aria-label="GitHub Profile">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/surajbhankumar/" target="_blank" rel="noopener" class="hero-social-btn" aria-label="LinkedIn Profile">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="mailto:surajbhan20005@gmail.com" class="hero-social-btn" aria-label="Send Email">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            </a>
+          </div>
         </div>
-        <div id="pricing-boxes">
-            <div class="pricing-boxes">
-                <div class="pricing-card card-1">
-                    <div class="service">
-                        Automation & Generative AI hackathons
-                    </div>
-                    <div class="price">
-                        Institution: KLH University <br>
-                        Recognition: Certificate of Appreciation
-                    </div>
-                    <div class="service-description">
-                        Awarded a Certificaite of Appreciation for securing Rank 2 at KLH University in colaboration with AUTOMATION ANYWHERE,
-                        MySifarish, ShanSoftech private limited
-                    </div>
-                    <div class="service-button">
-                        <button class="service-c-button"><a href="https://www.linkedin.com/posts/surajbhankumar_certificate-recognition-hackathon-activity-7397043186537447426-4EQF?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEPWVb4BhSGJXJw9mQJ1XBcTVu7pa5XSeTw" class="btn">Details</a></button>
-                    </div>
-                </div>
+
+        <div class="hero-image-wrapper">
+          <div class="hero-image-glow"></div>
+          <div class="hero-image-container">
+            <img src="img.jpg" alt="Suraj Bhan Kumar Portrait">
+            <div class="hero-image-caption">
+              <p class="caption-quote">"Building AI, beautifully told."</p>
+              <p class="caption-handle">@RaoSBK</p>
             </div>
-            <div class="pricing-boxes">
-                <div class="pricing-card card-3">
-                    <div class="service">
-                        GenAI Buildathon - Certificate of Participation
-                    </div>
-                    <div class="price">
-                        Institution: NxtWave (OpenAI Academy colab) <br>
-                        Recognition: Certificate of Participation
-                    </div>
-                    <div class="service-description">
-                        Participated in one of india's largest GenAI Buildathon, focused on understanding generative AI concepts, collaborative
-                        problem-solving, and practical exposure to AI driven solutions.
-                    </div>
-                    <div class="service-button">
-                        <button class="service-c-button"><a href="https://www.linkedin.com/posts/surajbhankumar_ai-generativeai-buildathon-activity-7373026582107656192-EUn2?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEPWVb4BhSGJXJw9mQJ1XBcTVu7pa5XSeTw" class="btn">Details</a></button>
-                    </div>
-                </div>
-            </div>
-            <div class="pricing-boxes">
-                <div class="pricing-card card-1">
-                    <div class="service">
-                        AI AGENTS INTENSIVE COURSE
-                    </div>
-                    <div class="price">
-                        Institution: Kaggle in collaboration with Google <br>
-                        Recognition: Badge / Certification of Completion
-                    </div>
-                    <div class="service-description">
-                        Successfully completed a 5-day intensive program focused on AI agents, including agent architectures, prompt engineering, tool integration, and real-world implementation using Google’s AI ecosystem.
-                    </div>
-                    <div class="service-button">
-                        <button class="service-c-button"><a href="https://www.linkedin.com/posts/surajbhankumar_im-pleased-to-share-that-i-have-successfully-activity-7408527127278555136-70Dq?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAEPWVb4BhSGJXJw9mQJ1XBcTVu7pa5XSeTw" class="btn">Details</a></button>
-                    </div>
-                </div>
-            </div>
-            <div class="pricing-boxes">
-                <div class="pricing-card card-3">
-                    <div class="service">
-                        Kaggle Badge- Python Coder
-                    </div>
-                    <div class="price">
-                        Institution: Kaggle by GOOGLE <br>
-                        Recognition: Badge of Python Coder
-                    </div>
-                    <div class="service-description">
-                        Earned the Python Coder badge on Kaggle, validating hands-on practice and understanding of Python programming through 
-                        structured learning and challenges.
-                    </div>
-                    <div class="service-button">
-                        <button class="service-c-button"><a href="https://www.kaggle.com/certification/badges/raosbk/30" class="btn">Details</a></button>
-                    </div>
-                </div>
-            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT ME SECTION -->
+    <section id="about">
+      <div class="container">
+        <span class="overtitle">About Me</span>
+        <h2 class="section-title">A look into <span>My Mindset</span></h2>
         
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I am a Computer Science undergraduate specializing in Artificial Intelligence and Machine Learning. With a strong academic core and a hands-on coding spirit, I focus on building solutions that matter. 
+            </p>
+            <p>
+              My journey is fueled by hackathons, real-world project builds, and an entrepreneurial startup mindset. I love taking complex, messy problems and automating them using Python, AI model architectures, and modern web frameworks.
+            </p>
+            
+            <div class="about-highlights">
+              <div class="highlight-card">
+                <i data-lucide="brain-circuit"></i>
+                <h4>AI & ML Focus</h4>
+                <p>Developing pipelines using PyTorch, TensorFlow, OpenCV, and intelligent GenAI workflows.</p>
+              </div>
+              <div class="highlight-card">
+                <i data-lucide="code-2"></i>
+                <h4>Full Stack Dev</h4>
+                <p>Designing fast web layouts with seamless API integrations and low-level code.</p>
+              </div>
+              <div class="highlight-card">
+                <i data-lucide="trophy"></i>
+                <h4>Hackathon Builder</h4>
+                <p>Deploying functional prototypes under extreme time pressure and high standards.</p>
+              </div>
+              <div class="highlight-card">
+                <i data-lucide="rocket"></i>
+                <h4>Startup Mindset</h4>
+                <p>Translating theoretical tech into robust software that helps actual clients grow.</p>
+              </div>
+            </div>
+          </div>
 
-            <div class="pricing-boxes">
-                <div class="pricing-card card-1">
-                    <div class="service">
-                            Institution: Gokaraju Rangaraju Institute (HackXtreme) <br>
-                            Recognition: Round 2 Finalist (Top 76/580+ Teams)
-                    </div>
-                    <div class="service-description">
-                            Selected among the top 76 teams out of 580+ participants in a national-level 24-hour hackathon. Successfully cleared the initial PPT screening round and advanced to the final hackathon stage, demonstrating strong problem-solving and technical skills.
-                    </div>
-                    <div class="service-button">
-                        <button class="service-c-button">
-                            <a href="https://www.linkedin.com/posts/surajbhankumar_hackxtreme-hackxtreme-hackathonexperience-ugcPost-7446638669303734272-vsB8?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEPWVb4BhSGJXJw9mQJ1XBcTVu7pa5XSeTw" class="btn">Details</a>
-                        </button>
-                    </div>
-                </div>
+          <!-- Interactive Github contribution / Stats board mockup -->
+          <div class="about-stats">
+            <div class="stats-header">
+              <div class="stats-title">
+                <i data-lucide="activity"></i>
+                <span>Activity & Stats</span>
+              </div>
+              <div class="stats-status">
+                <span class="status-dot"></span>
+                <span>Open to Internships</span>
+              </div>
             </div>
-            <div class="pricing-boxes">
-                <div class="pricing-card card-3">
-                    <div class="service">
-                        Institution: Murf AI Hackathon <br>
-                        Recognition: Participant & AI Project Builder
-                    </div>
-                    <div class="service-description">
-                        Participated in the Murf AI Hackathon where I developed a voice-based intelligent agent designed to assist users in daily activities. 
-                        The project focused on real-time interaction, speech processing, and practical AI implementation.
-                    </div>
-                    <div class="service-button">
-                        <button class="service-c-button">
-                            <a href="https://www.linkedin.com/posts/surajbhankumar_murfai-hackathon-edtech-ugcPost-7443359778799509504-DN1Q?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEPWVb4BhSGJXJw9mQJ1XBcTVu7pa5XSeTw" class="btn">Details</a>
-                        </button>
-                    </div>
-                </div>
+
+            <div class="github-grid-graph">
+              <div class="graph-label">GitHub Contribution Activity</div>
+              <div class="graph-cells" aria-label="Mock GitHub Contributions Board">
+                <!-- Row 1 -->
+                <div class="graph-cell level-3" title="12 commits"></div>
+                <div class="graph-cell level-1" title="2 commits"></div>
+                <div class="graph-cell level-0" title="No commits"></div>
+                <div class="graph-cell level-4" title="18 commits"></div>
+                <div class="graph-cell level-2" title="6 commits"></div>
+                <div class="graph-cell level-1" title="1 commit"></div>
+                <div class="graph-cell level-0" title="No commits"></div>
+                <div class="graph-cell level-3" title="11 commits"></div>
+                <div class="graph-cell level-4" title="22 commits"></div>
+                <div class="graph-cell level-2" title="5 commits"></div>
+                <!-- Row 2 -->
+                <div class="graph-cell level-0" title="No commits"></div>
+                <div class="graph-cell level-2" title="7 commits"></div>
+                <div class="graph-cell level-3" title="14 commits"></div>
+                <div class="graph-cell level-1" title="3 commits"></div>
+                <div class="graph-cell level-4" title="19 commits"></div>
+                <div class="graph-cell level-0" title="No commits"></div>
+                <div class="graph-cell level-2" title="8 commits"></div>
+                <div class="graph-cell level-3" title="12 commits"></div>
+                <div class="graph-cell level-1" title="2 commits"></div>
+                <div class="graph-cell level-4" title="25 commits"></div>
+                <!-- Row 3 -->
+                <div class="graph-cell level-2" title="6 commits"></div>
+                <div class="graph-cell level-0" title="No commits"></div>
+                <div class="graph-cell level-1" title="2 commits"></div>
+                <div class="graph-cell level-3" title="15 commits"></div>
+                <div class="graph-cell level-4" title="20 commits"></div>
+                <div class="graph-cell level-1" title="3 commits"></div>
+                <div class="graph-cell level-0" title="No commits"></div>
+                <div class="graph-cell level-2" title="5 commits"></div>
+                <div class="graph-cell level-3" title="10 commits"></div>
+                <div class="graph-cell level-4" title="21 commits"></div>
+                <!-- Row 4 -->
+                <div class="graph-cell level-1" title="1 commit"></div>
+                <div class="graph-cell level-3" title="13 commits"></div>
+                <div class="graph-cell level-4" title="17 commits"></div>
+                <div class="graph-cell level-0" title="No commits"></div>
+                <div class="graph-cell level-2" title="8 commits"></div>
+                <div class="graph-cell level-1" title="2 commits"></div>
+                <div class="graph-cell level-0" title="No commits"></div>
+                <div class="graph-cell level-3" title="11 commits"></div>
+                <div class="graph-cell level-4" title="26 commits"></div>
+                <div class="graph-cell level-2" title="7 commits"></div>
+              </div>
             </div>
+
+            <div class="stats-numerical-list">
+              <div class="stat-item">
+                <div class="stat-number">250+</div>
+                <div class="stat-label">Commits (2025)</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">10+</div>
+                <div class="stat-label">Projects Built</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">8.0</div>
+                <div class="stat-label">Hours Avg Hack time</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">9.38</div>
+                <div class="stat-label">B.Tech CGPA</div>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
+    </section>
 
-    <!-- Contact section-->
-    <div id="contactts">
-        <div class="overtitle">Contacts</div>
-        <h2>Get In Touch</h2>
-        <h3>Feel free to reach out for internship, projects, or collaboration.</h3>
-        <div>
-            <div class="contacts">
-                    <img src="phone.jpg" alt="Imag" class="contacts" width="35" height="35" style="margin-bottom: -4px;">
-                    <span class="colink">(+91) 797 066 7756</span>
-            </div>
-            <div class="contacts">
-                <img src="linkedinimg.png" alt="Imag" class="contacts" width="40" height="40" style="margin-bottom: -4px;">
-                <a href="https://www.linkedin.com/in/surajbhankumar/" class="colink">Linkedin</a>
-            </div>
-            <div class="contacts">
-                <img src="github.png" alt="Imag" class="contacts" width="40" height="40" style="margin-bottom: -4px;">
-                <a href="https://github.com/RaoSBK" class="colink">GitHub</a>
-            </div>
-            <div class="contacts">
-                    <img src="email.jpg" alt="Imag" class="contacts" width="45" height="45" style="margin-bottom: -4px;">
-                    <a href="mailto:surajbhan20005@gmial.com" class="colink">Mail Me</a>
-                </div>
+    <!-- TECH STACK SECTION -->
+    <section id="tech">
+      <div class="container">
+        <span class="overtitle">Tech Stack</span>
+        <h2 class="section-title">My <span>Technical Arsenal</span></h2>
+        <p class="section-subtitle">
+          A collection of languages, frameorks, and AI automation tools I have mastered and regularly apply in projects.
+        </p>
+
+        <!-- Tech grid cards -->
+        <div class="tech-grid">
+          <div class="tech-card">
+            <div class="tech-icon-container"><i data-lucide="terminal"></i></div>
+            <span class="tech-name">Python</span>
+          </div>
+          <div class="tech-card">
+            <div class="tech-icon-container"><i data-lucide="coffee"></i></div>
+            <span class="tech-name">Java</span>
+          </div>
+          <div class="tech-card">
+            <div class="tech-icon-container"><i data-lucide="binary"></i></div>
+            <span class="tech-name">C++</span>
+          </div>
+          <div class="tech-card">
+            <div class="tech-icon-container"><i data-lucide="file-code"></i></div>
+            <span class="tech-name">C</span>
+          </div>
+          <div class="tech-card">
+            <div class="tech-icon-container"><i data-lucide="cpu"></i></div>
+            <span class="tech-name">TensorFlow</span>
+          </div>
+          <div class="tech-card">
+            <div class="tech-icon-container"><i data-lucide="network"></i></div>
+            <span class="tech-name">PyTorch</span>
+          </div>
+          <div class="tech-card">
+            <div class="tech-icon-container"><i data-lucide="scan-eye"></i></div>
+            <span class="tech-name">OpenCV</span>
+          </div>
+          <div class="tech-card">
+            <div class="tech-icon-container"><i data-lucide="bar-chart-3"></i></div>
+            <span class="tech-name">Scikit Learn</span>
+          </div>
+          <div class="tech-card">
+            <div class="tech-icon-container"><i data-lucide="calculator"></i></div>
+            <span class="tech-name">NumPy</span>
+          </div>
+          <div class="tech-card">
+            <div class="tech-icon-container"><i data-lucide="table"></i></div>
+            <span class="tech-name">Pandas</span>
+          </div>
+          <div class="tech-card">
+            <div class="tech-icon-container"><i data-lucide="database"></i></div>
+            <span class="tech-name">MySQL</span>
+          </div>
+          <div class="tech-card">
+            <div class="tech-icon-container"><i data-lucide="git-branch"></i></div>
+            <span class="tech-name">Git</span>
+          </div>
+          <div class="tech-card">
+            <div class="tech-icon-container"><i data-lucide="github"></i></div>
+            <span class="tech-name">GitHub</span>
+          </div>
+          <div class="tech-card">
+            <div class="tech-icon-container"><i data-lucide="monitor"></i></div>
+            <span class="tech-name">Linux</span>
+          </div>
+          <div class="tech-card">
+            <div class="tech-icon-container"><i data-lucide="code"></i></div>
+            <span class="tech-name">VS Code</span>
+          </div>
+          <div class="tech-card">
+            <div class="tech-icon-container"><i data-lucide="book-open"></i></div>
+            <span class="tech-name">Jupyter</span>
+          </div>
+          <div class="tech-card">
+            <div class="tech-icon-container"><i data-lucide="trophy"></i></div>
+            <span class="tech-name">Kaggle</span>
+          </div>
+          <div class="tech-card">
+            <div class="tech-icon-container"><i data-lucide="workflow"></i></div>
+            <span class="tech-name">n8n</span>
+          </div>
         </div>
+
+        <!-- Animated Skill bar meters -->
+        <div class="tech-skills-meter">
+          <div class="skill-bar-wrapper">
+            <div class="skill-bar-header">
+              <span>Python & Backend Logic</span>
+              <span>95%</span>
+            </div>
+            <div class="skill-bar-outer">
+              <div class="skill-bar-inner" data-width="95%"></div>
+            </div>
+          </div>
+
+          <div class="skill-bar-wrapper">
+            <div class="skill-bar-header">
+              <span>AI Models & Computer Vision</span>
+              <span>90%</span>
+            </div>
+            <div class="skill-bar-outer">
+              <div class="skill-bar-inner" data-width="90%"></div>
+            </div>
+          </div>
+
+          <div class="skill-bar-wrapper">
+            <div class="skill-bar-header">
+              <span>Front-End UI/UX (HTML, CSS, JS)</span>
+              <span>85%</span>
+            </div>
+            <div class="skill-bar-outer">
+              <div class="skill-bar-inner" data-width="85%"></div>
+            </div>
+          </div>
+
+          <div class="skill-bar-wrapper">
+            <div class="skill-bar-header">
+              <span>GenAI Integration & n8n Automation</span>
+              <span>90%</span>
+            </div>
+            <div class="skill-bar-outer">
+              <div class="skill-bar-inner" data-width="90%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+      <div class="container">
+        <span class="overtitle">Projects</span>
+        <h2 class="section-title">My <span>Creation Laboratory</span></h2>
+        
+        <div class="project-filters">
+          <!-- Category Tabs -->
+          <div class="filter-tabs" role="tablist">
+            <button class="filter-tab active" data-filter="all" role="tab" aria-selected="true">All Builds</button>
+            <button class="filter-tab" data-filter="ai-ml" role="tab" aria-selected="false">AI & ML</button>
+            <button class="filter-tab" data-filter="web-dev" role="tab" aria-selected="false">Web Dev</button>
+            <button class="filter-tab" data-filter="client-startup" role="tab" aria-selected="false">Client & Startup</button>
+          </div>
+
+          <!-- Realtime Search bar -->
+          <div class="project-search-container">
+            <i data-lucide="search" class="project-search-icon"></i>
+            <input type="text" id="project-search" class="project-search-input" placeholder="Search projects by tech/title...">
+          </div>
+        </div>
+
+        <div class="project-grid">
+          <!-- 1. AI Smart Learning Assistant -->
+          <div class="project-card-wrapper">
+            <article class="project-card" data-category="ai-ml">
+              <div class="project-img-wrapper">
+                <div class="project-placeholder-bg">
+                  <i data-lucide="graduation-cap" style="width: 48px; height: 48px;"></i>
+                  <span>AI Smart Learning Coach</span>
+                </div>
+                <span class="project-badge-category">AI / ML</span>
+              </div>
+              <div class="project-info">
+                <h3 class="project-title">AI Smart Learning Coach</h3>
+                <p class="project-desc">
+                  An AI-powered tutoring assistant designed to resolve student academic queries and provide structured lesson pathways. Implemented preprocessing pipelines, NLP-based intent recognition, and responsive generation logic.
+                </p>
+                <div class="project-tags">
+                  <span class="project-tag">Python</span>
+                  <span class="project-tag">Streamlit</span>
+                  <span class="project-tag">NLP</span>
+                  <span class="project-tag">OpenAI API</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/RaoSBK" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">
+                    <i data-lucide="github"></i> Code
+                  </a>
+                  <a href="#" class="btn btn-primary btn-sm">
+                    <i data-lucide="external-link"></i> Live Demo
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- 2. Face Recognition Attendance System -->
+          <div class="project-card-wrapper">
+            <article class="project-card" data-category="ai-ml">
+              <div class="project-img-wrapper">
+                <div class="project-placeholder-bg" style="background: linear-gradient(135deg, #311b92, #0d47a1, #006064);">
+                  <i data-lucide="scan-face" style="width: 48px; height: 48px;"></i>
+                  <span>Face Recognition Attendance</span>
+                </div>
+                <span class="project-badge-category">AI / ML</span>
+              </div>
+              <div class="project-info">
+                <h3 class="project-title">Face Recognition Attendance</h3>
+                <p class="project-desc">
+                  An automated biometric attendance register that executes real-time face detection and match identification. Utilizes OpenCV libraries for encoding, creating highly accurate records and reducing class registration times.
+                </p>
+                <div class="project-tags">
+                  <span class="project-tag">Python</span>
+                  <span class="project-tag">OpenCV</span>
+                  <span class="project-tag">Face Recognition</span>
+                  <span class="project-tag">MySQL</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/RaoSBK" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">
+                    <i data-lucide="github"></i> Code
+                  </a>
+                  <a href="#" class="btn btn-primary btn-sm">
+                    <i data-lucide="external-link"></i> Live Demo
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- 3. Portfolio Website -->
+          <div class="project-card-wrapper">
+            <article class="project-card" data-category="web-dev">
+              <div class="project-img-wrapper">
+                <div class="project-placeholder-bg" style="background: linear-gradient(135deg, #111827, #311b92, #db2777);">
+                  <i data-lucide="layout" style="width: 48px; height: 48px;"></i>
+                  <span>Interactive Portfolio Website</span>
+                </div>
+                <span class="project-badge-category">Web Dev</span>
+              </div>
+              <div class="project-info">
+                <h3 class="project-title">Interactive Portfolio Website</h3>
+                <p class="project-desc">
+                  Completely custom portfolio designed with a glassmorphic look, mouse-reactive grid elements, dynamic theme mode switcher, custom cursors, and custom GSAP micro-animations. Made for high SEO and performance scores.
+                </p>
+                <div class="project-tags">
+                  <span class="project-tag">HTML5</span>
+                  <span class="project-tag">CSS3</span>
+                  <span class="project-tag">JavaScript</span>
+                  <span class="project-tag">GSAP</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/RaoSBK" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">
+                    <i data-lucide="github"></i> Code
+                  </a>
+                  <a href="https://surajbhan.netlify.app" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                    <i data-lucide="external-link"></i> Visit Site
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- 4. atharvtiwari.com -->
+          <div class="project-card-wrapper">
+            <article class="project-card" data-category="client-startup">
+              <div class="project-img-wrapper">
+                <div class="project-placeholder-bg" style="background: linear-gradient(135deg, #0f172a, #1e3a8a, #0369a1);">
+                  <i data-lucide="briefcase" style="width: 48px; height: 48px;"></i>
+                  <span>atharvtiwari.com</span>
+                </div>
+                <span class="project-badge-category">Client Site</span>
+              </div>
+              <div class="project-info">
+                <h3 class="project-title">atharvtiwari.com</h3>
+                <p class="project-desc">
+                  Designed and developed a professional website for a real client. Implemented premium responsive design variables, scroll animations, structural optimization metrics, and continuous deployment workflows.
+                </p>
+                <div class="project-tags">
+                  <span class="project-tag">Astro</span>
+                  <span class="project-tag">React</span>
+                  <span class="project-tag">HTML5</span>
+                  <span class="project-tag">CSS3</span>
+                  <span class="project-tag">JavaScript</span>
+                  <span class="project-tag">SEO</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/RaoSBK" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">
+                    <i data-lucide="lock"></i> Private Code
+                  </a>
+                  <a href="https://atharvtiwari.com" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                    <i data-lucide="external-link"></i> Visit Website
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- 5. 21seven.in -->
+          <div class="project-card-wrapper">
+            <article class="project-card" data-category="client-startup">
+              <div class="project-img-wrapper">
+                <div class="project-placeholder-bg" style="background: linear-gradient(135deg, #180828, #3b0764, #ec4899);">
+                  <i data-lucide="rocket" style="width: 48px; height: 48px;"></i>
+                  <span>21seven.in</span>
+                </div>
+                <span class="project-badge-category">Client Startup</span>
+              </div>
+              <div class="project-info">
+                <h3 class="project-title">21seven.in</h3>
+                <p class="project-desc">
+                  Developed and deployed a complete business platform showcasing digital services, brand design vectors, and modern web application configurations. Built to handle heavy user traffic and secure high conversion loads.
+                </p>
+                <div class="project-tags">
+                  <span class="project-tag">HTML5</span>
+                  <span class="project-tag">CSS3</span>
+                  <span class="project-tag">Mobile First</span>
+                  <span class="project-tag">UI/UX</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/RaoSBK" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">
+                    <i data-lucide="lock"></i> Private Code
+                  </a>
+                  <a href="https://21seven.in" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                    <i data-lucide="external-link"></i> Visit Website
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE TIMELINE SECTION -->
+    <section id="experience">
+      <div class="container">
+        <span class="overtitle">Experience</span>
+        <h2 class="section-title">My <span>Professional Odyssey</span></h2>
+        
+        <div class="timeline">
+          <!-- 1. Freelance Web Developer -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2024 - Present</span>
+              <h3>Freelance Web Developer</h3>
+              <h4>Independent Contractor</h4>
+              <p>
+                Partnering with startups and small business owners to design, optimize, and deploy client-focused web platforms.
+              </p>
+              <ul>
+                <li>Developed high-performing business websites including 21seven.in and client portfolio atharvtiwari.com.</li>
+                <li>Built customized GenAI automation systems and scripts to reduce manual lead processing times.</li>
+                <li>Configured custom API structures connecting front-end assets with lightweight back-end engines.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 2. Hackathon Developer -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2024 - Present</span>
+              <h3>Hackathon Developer</h3>
+              <h4>Competitive AI & Software Engineering</h4>
+              <p>
+                Participating in multiple national-level and community-driven coding marathons. Focused on deploying software products in short, stressful time frames.
+              </p>
+              <ul>
+                <li>Developed functional AI speech recognition agents and automated candidate assessment software.</li>
+                <li>Collaborated in remote and offline teams to outline slide pitches, prototype systems, and deploy live demos.</li>
+                <li>Resolved logical bottlenecks under 8-hour constraints for complex machine learning models.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS SECTION -->
+    <section id="achievements">
+      <div class="container">
+        <span class="overtitle">Achievements</span>
+        <h2 class="section-title">Recognitions & <span>Victories</span></h2>
+        
+        <div class="achievements-grid">
+          <!-- 1. GenAI Automation Coding Competition Winner -->
+          <div class="achievement-card">
+            <div class="achievement-icon">
+              <i data-lucide="award"></i>
+            </div>
+            <div class="achievement-info">
+              <h3>GenAI Automation Winner</h3>
+              <p>
+                Awarded Rank 2 at KLH University's GenAI Automation 2025 coding competition in collaboration with Automation Anywhere and ShanSoftech. Developed an AI-powered candidate screening platform.
+              </p>
+            </div>
+            <a href="https://www.linkedin.com/posts/surajbhankumar_certificate-recognition-hackathon-activity-7397043186537447426-4EQF" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">
+              Verify Link
+            </a>
+          </div>
+
+          <!-- 2. College-Level Coding Competition Winner -->
+          <div class="achievement-card">
+            <div class="achievement-icon">
+              <i data-lucide="award"></i>
+            </div>
+            <div class="achievement-info">
+              <h3>College Coding Winner</h3>
+              <p>
+                Secured 1st Place in the College-Level Coding Competition (2024) by solving competitive programming challenges focusing on algorithms, time-complexity, and data structure structures.
+              </p>
+            </div>
+          </div>
+
+          <!-- 3. AI Ideathon Top 10 Finalist -->
+          <div class="achievement-card">
+            <div class="achievement-icon">
+              <i data-lucide="sparkles"></i>
+            </div>
+            <div class="achievement-info">
+              <h3>AI Ideathon Top 10</h3>
+              <p>
+                Reached the final Top 10 out of multiple entries at the AI Ideathon 2025. Pitched an innovative generative AI solution focused on ed-tech student coaching pipelines.
+              </p>
+            </div>
+          </div>
+
+          <!-- 4. Google + Kaggle AI Agents Course -->
+          <div class="achievement-card">
+            <div class="achievement-icon">
+              <i data-lucide="shield-check"></i>
+            </div>
+            <div class="achievement-info">
+              <h3>AI Agents Intensive</h3>
+              <p>
+                Successfully completed the 5-Day AI Agents Intensive Course designed by Google & Kaggle. Built agents utilizing tool call structures, retrieval augmented generation, and prompt triggers.
+              </p>
+            </div>
+            <a href="https://www.linkedin.com/posts/surajbhankumar_im-pleased-to-share-that-i-have-successfully-activity-7408527127278555136-70Dq" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">
+              Verify Badge
+            </a>
+          </div>
+
+          <!-- 5. Kaggle Python Coder Badge -->
+          <div class="achievement-card">
+            <div class="achievement-icon">
+              <i data-lucide="code-xml"></i>
+            </div>
+            <div class="achievement-info">
+              <h3>Kaggle Python Badge</h3>
+              <p>
+                Earned the certified Python Coder Badge on Kaggle. Validated deep understanding of Python data structures, libraries (Pandas/NumPy), logic modules, and file controls.
+              </p>
+            </div>
+            <a href="https://www.kaggle.com/certification/badges/raosbk/30" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">
+              View Profile
+            </a>
+          </div>
+
+          <!-- 6. National Hackathon Gokaraju Rangaraju -->
+          <div class="achievement-card">
+            <div class="achievement-icon">
+              <i data-lucide="flame"></i>
+            </div>
+            <div class="achievement-info">
+              <h3>GDG HackXtreme Finalist</h3>
+              <p>
+                Round 2 Finalist (Top 76 out of 580+ teams) in a national-level 24-hour hackathon at Gokaraju Rangaraju Institute (organized by Google Developer Group). Built an online cheating-prevention predictor tool.
+              </p>
+            </div>
+            <a href="https://www.linkedin.com/posts/surajbhankumar_hackxtreme-hackxtreme-hackathonexperience-ugcPost-7446638669303734272-vsB8" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">
+              Read Post
+            </a>
+          </div>
+
+          <!-- 7. BITS Pilani Impactus Hackathon -->
+          <div class="achievement-card">
+            <div class="achievement-icon">
+              <i data-lucide="zap"></i>
+            </div>
+            <div class="achievement-info">
+              <h3>BITS Pilani Hackathon</h3>
+              <p>
+                Participated in the Impactus Hackathon at BITS Pilani. Designed and pitched solutions under a strict 8-hour sprint constraint in collaboration with Trip Genie AI.
+              </p>
+            </div>
+          </div>
+
+          <!-- 8. Murf AI Hackathon Participant -->
+          <div class="achievement-card">
+            <div class="achievement-icon">
+              <i data-lucide="mic"></i>
+            </div>
+            <div class="achievement-info">
+              <h3>Murf AI Participant</h3>
+              <p>
+                Participated in the Murf AI Hackathon. Designed a voice-based assistant agent with real-time speech synthesis interactions for daily task support.
+              </p>
+            </div>
+            <a href="https://www.linkedin.com/posts/surajbhankumar_murfai-hackathon-edtech-ugcPost-7443359778799509504-DN1Q" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">
+              View Post
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATES SECTION -->
+    <section id="certificates">
+      <div class="container">
+        <span class="overtitle">Certifications</span>
+        <h2 class="section-title">Verified <span>Credentials</span></h2>
+        
+        <div class="certificates-grid">
+          <!-- Python for Data Science -->
+          <div class="certificate-card">
+            <div class="certificate-header">
+              <span class="certificate-issuer">Coursera</span>
+              <i data-lucide="external-link" style="color: var(--accent-1);"></i>
+            </div>
+            <h3>Python for Data Science</h3>
+            <p>Validated core capabilities in structuring data, running analytical operations, plotting parameters, and processing data frames with Python structures.</p>
+          </div>
+
+          <!-- Introduction to Machine Learning -->
+          <div class="certificate-card">
+            <div class="certificate-header">
+              <span class="certificate-issuer">Google Developers</span>
+              <i data-lucide="external-link" style="color: var(--accent-2);"></i>
+            </div>
+            <h3>Introduction to Machine Learning</h3>
+            <p>Covered fundamental concepts of regression, categorization, overfitting constraints, gradient descent adjustments, and basic neural network setups.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section id="education">
+      <div class="container">
+        <span class="overtitle">Education</span>
+        <h2 class="section-title">Academic <span>Milestones</span></h2>
+        
+        <div class="education-timeline">
+          <!-- B.Tech -->
+          <div class="edu-card">
+            <div class="edu-header">
+              <div class="edu-title-group">
+                <h3>Bachelor of Technology in Computer Science</h3>
+                <h4>Specializing in Artificial Intelligence & Machine Learning</h4>
+              </div>
+              <div class="edu-meta">
+                <span class="edu-year">2024 - 2028</span>
+                <span class="edu-gpa">CGPA: 9.38 (up to 3rd Semester)</span>
+              </div>
+            </div>
+            <p class="edu-desc">
+              Chaitanya (Deemed to be University). Pursuing core modules in Neural Networks, Algorithms, Probability & Statistics, Advanced Python, and Database Architectures.
+            </p>
+          </div>
+
+          <!-- Intermediate -->
+          <div class="edu-card">
+            <div class="edu-header">
+              <div class="edu-title-group">
+                <h3>Intermediate (B.S.E.B)</h3>
+                <h4>Science stream (Maths, Physics, Chemistry)</h4>
+              </div>
+              <div class="edu-meta">
+                <span class="edu-year">2022 - 2024</span>
+                <span class="edu-gpa">Score: 75.2%</span>
+              </div>
+            </div>
+            <p class="edu-desc">
+              D.A.S.S. (+2) School, Sangrampur. Focused on mathematical equations, mechanical science frameworks, and structural analysis.
+            </p>
+          </div>
+
+          <!-- Matriculation -->
+          <div class="edu-card">
+            <div class="edu-header">
+              <div class="edu-title-group">
+                <h3>Matriculation (B.S.E.B)</h3>
+                <h4>General Secondary Curriculum</h4>
+              </div>
+              <div class="edu-meta">
+                <span class="edu-year">2021 - 2022</span>
+                <span class="edu-gpa">Score: 70.4%</span>
+              </div>
+            </div>
+            <p class="edu-desc">
+              D.A.S.S. (+2) School, Sangrampur. Built basic logical skills, primary science structures, and algebraic concepts.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+      <div class="container">
+        <span class="overtitle">Contact</span>
+        <h2 class="section-title">Start a <span>Conversation</span></h2>
+        
+        <div class="contact-grid">
+          <div class="contact-info">
+            <p style="font-size: 1.1rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 16px;">
+              Have an interesting problem to solve, an internship opening, or a project collaboration idea? Drop a message or reach out via socials. I will get back to you within 24 hours.
+            </p>
+
+            <div class="contact-card">
+              <div class="contact-card-icon"><i data-lucide="phone"></i></div>
+              <div class="contact-card-details">
+                <h4>Call Me</h4>
+                <a href="tel:+917970667756" class="contact-link">+91 797 066 7756</a>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-card-icon"><i data-lucide="mail"></i></div>
+              <div class="contact-card-details">
+                <h4>Direct Email</h4>
+                <a href="mailto:surajbhan20005@gmail.com" class="contact-link">surajbhan20005@gmail.com</a>
+              </div>
+            </div>
+
+            <!-- Email copy helper widget -->
+            <div class="email-copy-widget">
+              <span class="email-copy-text">surajbhan20005@gmail.com</span>
+              <button id="email-copy-btn" class="email-copy-btn" title="Copy email address" aria-label="Copy email address">
+                <i data-lucide="copy"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="contact-form-container">
+            <form id="portfolio-contact-form" novalidate>
+              <div class="form-group-row">
+                <div class="form-group">
+                  <label for="form-name">Full Name *</label>
+                  <input type="text" id="form-name" class="form-input" placeholder="e.g. John Doe" required>
+                  <span class="form-error" aria-live="polite">Name must be at least 2 letters.</span>
+                </div>
+                <div class="form-group">
+                  <label for="form-email">Email Address *</label>
+                  <input type="email" id="form-email" class="form-input" placeholder="e.g. john@example.com" required>
+                  <span class="form-error" aria-live="polite">Please enter a valid email address.</span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="form-subject">Subject</label>
+                <input type="text" id="form-subject" class="form-input" placeholder="e.g. Collaboration Proposal">
+              </div>
+
+              <div class="form-group">
+                <label for="form-message">Message *</label>
+                <textarea id="form-message" class="form-textarea" placeholder="Describe your project, timeline, or query..." required></textarea>
+                <span class="form-error" aria-live="polite">Message must be at least 10 characters long.</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                <i data-lucide="send"></i> Send Message
+              </button>
+
+              <div id="form-status" class="form-status-msg" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+      <a href="#hero" class="footer-logo" aria-label="Suraj Bhan logo footer">
+        <span>Suraj</span> Bhan
+      </a>
+      
+      <ul class="footer-links">
+        <li class="footer-link"><a href="#hero">Home</a></li>
+        <li class="footer-link"><a href="#about">About</a></li>
+        <li class="footer-link"><a href="#tech">Skills</a></li>
+        <li class="footer-link"><a href="#projects">Projects</a></li>
+        <li class="footer-link"><a href="#experience">Experience</a></li>
+        <li class="footer-link"><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="footer-socials">
+        <a href="https://github.com/RaoSBK" target="_blank" rel="noopener" class="hero-social-btn" aria-label="GitHub Profile">
+          <i data-lucide="github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/surajbhankumar/" target="_blank" rel="noopener" class="hero-social-btn" aria-label="LinkedIn Profile">
+          <i data-lucide="linkedin"></i>
+        </a>
+        <a href="mailto:surajbhan20005@gmail.com" class="hero-social-btn" aria-label="Send Email">
+          <i data-lucide="mail"></i>
+        </a>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+          &copy; 2026 Suraj Bhan Kumar. All rights reserved. Designed for high speed, accessibility, and impact.
+        </p>
+        <div class="footer-stats">
+          <span>Visitor Count: <span id="visitor-count">1426</span></span>
+          <span>Resume Downloads: <span id="download-count">384</span></span>
+        </div>
+      </div>
     </div>
+  </footer>
 
-
-    <div id="footer">
-        Suraj Bhan © 2025. All Rights Reserved.
-    </div>
-
+  <!-- Floating Scroll To Top -->
+  <button id="back-to-top" class="back-to-top" aria-label="Scroll back to top">
+    <i data-lucide="chevron-up"></i>
+  </button>
 </body>
-
 </html>
